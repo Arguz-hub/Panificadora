@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Panadería Delicias del Trigo</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-yellow-50 text-gray-800">
+
+  <!-- NAVBAR -->
+  <header class="bg-yellow-200 shadow-md">
+    <div class="max-w-6xl mx-auto px-4 py-3 flex justify-between items-center">
+      <h1 class="text-2xl font-bold text-amber-800">🥖 Delicias del Trigo</h1>
+      <nav class="space-x-6 text-lg">
+        <a href="#inicio" class="hover:text-amber-700">Inicio</a>
+        <a href="#productos" class="hover:text-amber-700">Productos</a>
+        <a href="#nosotros" class="hover:text-amber-700">Nosotros</a>
+        <a href="#contacto" class="hover:text-amber-700">Contacto</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section id="inicio" class="relative bg-cover bg-center h-[500px]" style="background-image: url('https://images.unsplash.com/photo-1608198093002-ad4e00548402');">
+    <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center">
+      <div class="text-center text-white">
+        <h2 class="text-4xl md:text-5xl font-bold mb-4">El sabor del pan recién horneado</h2>
+        <p class="text-lg mb-6">Tradición y calidad en cada bocado</p>
+        <a href="#productos" class="bg-amber-500 px-6 py-3 rounded-xl text-white font-semibold hover:bg-amber-600 transition">Ver Productos</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRODUCTOS -->
+  <section id="productos" class="max-w-6xl mx-auto px-4 py-16">
+    <h3 class="text-3xl font-bold text-center text-amber-800 mb-10">Nuestros Productos</h3>
+    <div class="grid md:grid-cols-3 gap-8">
+      <div class="bg-white shadow-lg rounded-2xl overflow-hidden hover:scale-105 transition">
+        <img src="https://images.unsplash.com/photo-1608198093002-ad4e00548402" class="w-full h-48 object-cover" alt="Pan artesanal">
+        <div class="p-5">
+          <h4 class="text-xl font-semibold mb-2">Pan Artesanal</h4>
+          <p class="text-gray-600">Hecho con masa madre y horneado cada mañana.</p>
+        </div>
+      </div>
+
+      <div class="bg-white shadow-lg rounded-2xl overflow-hidden hover:scale-105 transition">
+        <img src="https://images.unsplash.com/photo-1556911073-52527ac437f5" class="w-full h-48 object-cover" alt="Bollería dulce">
+        <div class="p-5">
+          <h4 class="text-xl font-semibold mb-2">Bollería Dulce</h4>
+          <p class="text-gray-600">Croissants, berlines y empanadas recién salidas del horno.</p>
+        </div>
+      </div>
+
+      <div class="bg-white shadow-lg rounded-2xl overflow-hidden hover:scale-105 transition">
+        <img src="https://images.unsplash.com/photo-1627308595189-9fe8fe9a6f3e" class="w-full h-48 object-cover" alt="Pasteles">
+        <div class="p-5">
+          <h4 class="text-xl font-semibold mb-2">Pasteles y Tortas</h4>
+          <p class="text-gray-600">Perfectos para cumpleaños y ocasiones especiales.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- NOSOTROS -->
+  <section id="nosotros" class="bg-amber-100 py-16">
+    <div class="max-w-6xl mx-auto px-4 text-center">
+      <h3 class="text-3xl font-bold text-amber-800 mb-6">Sobre Nosotros</h3>
+      <p class="text-lg text-gray-700 max-w-3xl mx-auto">
+        Somos una panadería familiar con más de 20 años de experiencia, dedicada a elaborar productos frescos y deliciosos con ingredientes naturales.  
+        Nuestro compromiso es ofrecer calidad y calidez en cada pan que llega a tu mesa.
+      </p>
+    </div>
+  </section>
+
+  <!-- CONTACTO -->
+  <section id="contacto" class="max-w-6xl mx-auto px-4 py-16">
+    <h3 class="text-3xl font-bold text-center text-amber-800 mb-8">Contáctanos</h3>
+    <div class="grid md:grid-cols-2 gap-10">
+      <form class="bg-white shadow-lg p-6 rounded-2xl">
+        <input type="text" placeholder="Nombre" class="w-full mb-4 p-3 border rounded-lg" required>
+        <input type="email" placeholder="Correo" class="w-full mb-4 p-3 border rounded-lg" required>
+        <textarea placeholder="Mensaje" class="w-full mb-4 p-3 border rounded-lg h-32" required></textarea>
+        <button class="bg-amber-500 text-white px-6 py-3 rounded-xl font-semibold hover:bg-amber-600 transition">Enviar</button>
+      </form>
+      <div class="flex flex-col justify-center">
+        <p class="text-lg mb-2"><strong>📍 Dirección:</strong> Calle Panadero 123, Ciudad del Trigo</p>
+        <p class="text-lg mb-2"><strong>📞 Teléfono:</strong> +56 9 1234 5678</p>
+        <p class="text-lg mb-2"><strong>🕒 Horario:</strong> Lunes a Sábado, 7:00 - 20:00</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-amber-800 text-yellow-50 text-center py-4">
+    <p>&copy; 2025 Panadería Delicias del Trigo. Todos los derechos reservados.</p>
+  </footer>
+
+</body>
+</html>
